@@ -177,9 +177,11 @@ const showBtnClickHandler = () => {
         var isPalindrome = checkAllPalindrome(date);
 
         if (isPalindrome) {
+            resultBox.style.display = "block"
             resultBox.innerText = "Yay!!! Yout bday is palindrome"
 
         } else {
+            resultBox.style.display = "block"
             var [count, nextDate] = nextPalindromeDate(date);
 
             resultBox.innerText = `The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${count} days! 😔`;
